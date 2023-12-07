@@ -1,0 +1,17 @@
+const constFirebase = {
+  FIREBASE_API_KEY: String(process.env.REACT_APP_FIREBASE_API_KEY),
+  FIREBASE_AUTH_DOMAIN: String(process.env.REACT_APP_FIREBASE_AUTH_DOMAIN),
+  FIREBASE_PROJECT_ID: String(process.env.REACT_APP_FIREBASE_PROJECT_ID),
+  FIREBASE_STORAGE_BUCKET: String(
+    process.env.REACT_APP_FIREBASE_STORAGE_BUCKET
+  ),
+  FIREBASE_MESSAGING_SENDER_ID: String(
+    process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID
+  ),
+  FIREBASE_APP_ID: String(process.env.REACT_APP_FIREBASE_APP_ID),
+  FIREBASE_MEASUREMENT_ID: String(
+    process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+  ),
+};
+
+export default constFirebase;

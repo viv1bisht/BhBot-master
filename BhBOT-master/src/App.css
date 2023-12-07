@@ -1,0 +1,109 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo img{
+  height: 90px;
+}
+
+.auth-buttons button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.left-frame {
+  /* Add your left frame styles here */
+  /* Example: width: 20%; background-color: #f1f1f1; */
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+textarea {
+  flex-grow: 0;
+  margin-bottom: 1px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  resize: vertical; /*Allow vertical resizing */
+  overflow-y: auto; /*Enable vertical scrolling if needed*/
+}
+
+.response-container { 
+  display: flex;
+  position: relative;
+}
+
+.response-container textarea {
+  flex-grow: 1;
+  margin-right: 10px;
+  resize: vertical;
+  overflow-y: auto;
+  min-height: 70vh; /* Set a fixed minimum height */
+}
+
+.copy-button,
+.submit-button,
+.record,
+.speech{
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.submit-button {
+  align-self: flex-end;
+}
+
+.record{
+  position: absolute;
+  align-self: flex-end;
+  right:-100px;
+  margin: 100px;
+  top: 358px;
+}
+.speech{
+  position: absolute;
+  align-self:flex-start ;
+  right: -10px;
+  top: 50px;
+}
+
+/* Add more styles as needed */
